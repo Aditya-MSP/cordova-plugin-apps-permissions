@@ -1,0 +1,27 @@
+{
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-apps-permissions",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Get the installed Apps List and their permission in Android device",
+  "homepage": "https://github.com/Aditya-MSP/cordova-plugin-apps-permissions#readme",
+  "keywords": [
+    "cordova",
+    "permissions",
+    "apps",
+    "info",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-apps-permissions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aditya-MSP/cordova-plugin-apps-permissions.git"
+  },
+  "version": "0.0.1"
+}

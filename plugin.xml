@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugin
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-apps-permissions"
+	version="0.0.1"
+>
+	<engines>
+        <engine name="cordova" version=">=4.0.0" />
+    </engines>
+
+	<name>Apps Permissions</name>
+
+	<description>Installed Apps List and their permissions plugin for Cordova</description>
+
+	<author>Aditya Tripathi</author>
+
+	<keywords>cordova,apps,permissions,device,hardware</keywords>
+
+	<license>MIT</license>
+
+	<js-module name="AppsPermissions" src="www/AppsPermissions.js">
+		<clobbers target="cordova.plugins.AppsPermissions"/>
+	</js-module>
+
+	<platform name="android">
+		<source-file src="src/android/AppsPermissions.java" target-dir="src/org/digivogue/appspermissions"/>
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="AppsPermissions">
+				<param name="android-package" value="org.digivogue.appspermissions.AppsPermissions"/>
+			</feature>
+		</config-file>
+	</platform>
+</plugin>
